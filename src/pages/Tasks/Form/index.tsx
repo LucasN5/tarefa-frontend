@@ -57,11 +57,17 @@ const Tasks: React.FC = () => {
             description: response.data.description
         })
     }
+
+    
+
     
     return(
 
+
         <div className="container">
+            
             <br />
+        
             <div className="task-header">
                 <h1>Nova Tarefa</h1>
                 <Button variant="dark" size="sm">Voltar</Button>
@@ -97,5 +103,8 @@ const Tasks: React.FC = () => {
         </div>
     );
 } 
+
+
+ 
 
 export default Tasks;
