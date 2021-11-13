@@ -22,7 +22,7 @@ const Tasks: React.FC = () => {
 
     useEffect(() => {
         console.log(id)
-        if (id != undefined) {
+        if (id !== undefined) {
             findTask(id)
         }
     }, [id])
@@ -37,7 +37,7 @@ const Tasks: React.FC = () => {
    async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
 
-        if(id != undefined) {
+        if(id !== undefined) {
             const response = await api.put(`/tasks/${id}`, model)
         } else {
             const response = await api.post('/tasks', model)
